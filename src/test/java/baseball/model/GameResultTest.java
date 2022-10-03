@@ -16,9 +16,9 @@ public class GameResultTest {
     @Test
     public void matchAlrightGameScorePrint() {
         gameResult.updateResult("스트라이크");
-        gameResult.updateResult("스트라이크");
+        gameResult.updateResult("볼");
         gameResult.updateResult("볼");
 
-        assertEquals("1볼 2스트라이크 ", gameResult.printGameResult());
+        assertEquals("2볼 1스트라이크", gameResult.printGameResult());
     }
 }

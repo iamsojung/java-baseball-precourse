@@ -2,6 +2,7 @@ package baseball;
 
 import baseball.domain.GameState;
 import baseball.controller.BaseBallGameController;
+import baseball.model.OptionInput;
 
 public class Application {
 
@@ -11,6 +12,7 @@ public class Application {
         while (gameState == GameState.START) {
             BaseBallGameController play = new BaseBallGameController();
             play.run();
+            gameState = new OptionInput().getOption();
         }
     }
 }
