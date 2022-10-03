@@ -7,7 +7,7 @@ import camp.nextstep.edu.missionutils.Randoms;
 public class RandomNumbersGenerator {
     private final ArrayList<Integer> randomNumbers;
 
-    RandomNumbersGenerator() {
+    public RandomNumbersGenerator() {
         randomNumbers = new ArrayList<>();
         while(randomNumbers.size() < GameRule.MAX_LENGTH) {
             addRandomNumber();
