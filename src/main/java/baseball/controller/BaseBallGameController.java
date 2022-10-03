@@ -24,7 +24,7 @@ public class BaseBallGameController {
             System.out.println(result.printGameResult());
         }
 
-        System.out.println("정답입니다! 게임을 종료합니다.");
+        System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
     }
 
     private GameResult solveNumber(ArrayList<Integer> randoms) throws IllegalArgumentException {
