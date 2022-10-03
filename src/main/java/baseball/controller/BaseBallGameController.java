@@ -1,5 +1,6 @@
 package baseball.controller;
 
+import baseball.domain.GameRule;
 import baseball.model.GameResult;
 import baseball.model.Judge;
 import baseball.model.Player;
@@ -18,6 +19,12 @@ public class BaseBallGameController {
         GameResult result = solveNumber(randomNumbers);
         System.out.println(result.printGameResult());
 
+        while(result.getStrikeCnt() != GameRule.MAX_LENGTH) {
+            result = solveNumber(randomNumbers);
+            System.out.println(result.printGameResult());
+        }
+
+        System.out.println("정답입니다! 게임을 종료합니다.");
     }
 
     private GameResult solveNumber(ArrayList<Integer> randoms) throws IllegalArgumentException {
