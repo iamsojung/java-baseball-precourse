@@ -1,7 +1,7 @@
 package baseball;
 
 import baseball.domain.GameState;
-import baseball.model.GamePlay;
+import baseball.controller.BaseBallGameController;
 
 public class Application {
 
@@ -9,7 +9,7 @@ public class Application {
         GameState gameState = GameState.START;
 
         while (gameState == GameState.START) {
-            GamePlay play = new GamePlay();
+            BaseBallGameController play = new BaseBallGameController();
             play.run();
         }
     }
