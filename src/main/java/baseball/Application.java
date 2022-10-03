@@ -1,7 +1,16 @@
 package baseball;
 
+import baseball.domain.GameState;
+import baseball.model.GamePlay;
+
 public class Application {
+
     public static void main(String[] args) {
-        // TODO: 프로그램 구현
+        GameState gameState = GameState.START;
+
+        while (gameState == GameState.START) {
+            GamePlay play = new GamePlay();
+            play.run();
+        }
     }
 }
